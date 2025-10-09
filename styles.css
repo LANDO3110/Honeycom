@@ -1,0 +1,250 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo de el header */
+header {
+padding: 10px 20px;
+background-color:#474056;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* color y tamaño de letra de los parrafos */
+p {
+font-size: 1.2rem;
+color: #DDF4E7;
+}
+
+/* tamaño del icono de la pagina */
+header img {
+width:80px ;
+}
+
+/* Estilo de mi lista de nav */
+nav a {
+  color:#DDF4E7 ; 
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+/*Color de el Fondo */
+main{
+    flex: 1;
+    background-color: #757083;
+}
+
+main img{
+    max-width: 100%;
+    height: auto;
+}
+/* Fondo de Footer */
+footer{
+    background-image:url(./medios/bannerfooter.png);
+    
+    background-size: cover;
+    padding: 20px;
+}
+
+/* Centrado de el titulo del footer */
+footer p {
+    text-align: center;
+}
+
+/* Tamaño de los iconos de Redes Sociales */
+footer img{
+    height: 50px;
+}
+
+/* Color para los h3 */
+h3{
+    color: #DDF4E7;
+}
+
+/* Estilo de los iconos de los planes */
+.iconplan{
+    height: 50px;
+}
+
+/* Flex para mi nav*/
+.divheader{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 20px;
+  background-color: #474056;
+  list-style: none;
+}
+
+/* Div de index con 2 columnas */
+.divmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+
+}
+ 
+.divmain img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Flex de los contenedores de redes sociales */
+.redsocial {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+ 
+/* Estilos de las letras del footer */
+footer a {
+  color:#DDF4E7 ; 
+  text-decoration: none;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+/* Estilo de Formularioo*/
+form{
+
+max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+/* letra color blanco del formulario */
+form label {
+   color:#DDF4E7 ;  
+}
+
+/* Color y alineacion de mis titulos */
+.h1miccs {
+    color: #DDF4E7;
+    text-align: center;
+}
+
+.divcarru {
+    
+  display: grid;
+  min-height: 70vh;
+  align-items: center;
+  align-content: center;
+  
+}
+
+#imgcarru1 {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+#imgcarru2 {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+#imgcarru3 {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.divplanes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid-dedicados {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+.texto-dedicados p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #DDF4E7;
+}
+
+.videodedicados iframe {
+  max-width: 100%;
+}
+
+.cardmio {
+  background-color: #f1f1f1 !important;
+}
+
+.cardmio p{
+color: #333 !important;
+}
+
+@media (max-width: 768px) {
+
+    .divheader {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start; /* o center si prefieres centrado */
+  }
+
+  .divheader li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0;
+  }
+
+   .divmain {
+    grid-template-columns: 1fr;
+  }
+
+  .divplanes {
+    grid-template-columns: 1fr;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    
+    font-size: 1.8rem;
+  }
+}
