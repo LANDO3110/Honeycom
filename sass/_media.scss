@@ -1,0 +1,27 @@
+@use 'variables' as vars;
+
+@media (max-width: 768px) {
+  .divheader {
+    flex-direction: column;
+    gap: 15px;
+    align-items:flex-start;
+  }
+
+  .divheader li {
+    width: auto;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .divmain, .divplanes {
+    grid-template-columns: 1fr;
+  }
+
+  p { font-size: 1rem; }
+  h3 { font-size: 1.2rem; }
+  h1 { font-size: 1.8rem; }
+}

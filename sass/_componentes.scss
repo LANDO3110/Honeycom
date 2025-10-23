@@ -1,0 +1,28 @@
+@use 'variables' as vars;
+@use 'mixins' as *;
+
+.iconplan { height: 50px; }
+
+.cardmio {
+  @include card();
+  
+  p { color: #333 !important; }
+}
+
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+  label { color: vars.$color-primario; }
+}
+
+.h1miccs {
+  color: vars.$color-primario;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+  color: vars.$color-primario;
+}

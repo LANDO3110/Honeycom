@@ -1,0 +1,23 @@
+@use 'variables' as vars;
+@use 'mixins' as *;
+
+footer {
+  background-image: url(../medios/bannerfooter.png);
+  background-size: cover;
+  padding: 20px;
+
+  p { text-align: center; }
+
+  img { height: 50px; }
+
+  a {
+    color: vars.$color-primario;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+}
+
+.redsocial {
+  @include flex-center(15px);
+  margin: 10px 0;
+}

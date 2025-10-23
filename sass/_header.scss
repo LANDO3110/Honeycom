@@ -1,0 +1,63 @@
+@use 'variables' as vars;
+@use 'mixins' as *;
+
+
+header {
+  padding: 10px 20px;
+  background-color: vars.$color-header;
+
+  img {
+    width: 80px;
+    
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    color: vars.$color-primario;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 15px;
+
+    li {
+      list-style: none;
+      padding: 5px 10px;
+      @include li-hover();
+    }
+  }
+
+  .nav-icon {
+    display: inline-block;
+    animation: girar-sesgado 3s linear infinite; // 🔄 siempre girando
+    transition: transform 0.3s ease;
+
+    &:hover {
+      animation-play-state: paused; // 🛑 se detiene al hacer hover
+      transform: scale(1.1); // opcional, leve aumento al pasar el mouse
+    }
+  }
+
+  
+}
+
+.divheader {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 10px 20px;
+  background-color: vars.$color-header;
+  list-style: none;
+}

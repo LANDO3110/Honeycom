@@ -1,0 +1,27 @@
+@use 'variables' as vars;
+
+@mixin flex-center($gap: 0) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin card($bg-color: #f1f1f1) {
+  background-color: $bg-color;
+  border-radius: vars.$border-radius;
+  box-shadow: vars.$shadow-soft;
+  padding: vars.$spacing;
+}
+
+@mixin li-hover($bg: vars.$color-primario, $color-text: vars.$color-header) {
+  transition: all 0.3s ease;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $bg;
+    color: $color-text;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}

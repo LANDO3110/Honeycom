@@ -1,0 +1,10 @@
+%texto-base {
+  font-family: $font-base;
+  font-size: $font-size-base;
+  line-height: 1.6;
+  color: $color-primario;
+}
+
+%card-base {
+  @include card();
+}

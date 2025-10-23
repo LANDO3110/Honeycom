@@ -1,0 +1,85 @@
+@use 'variables' as vars;
+@use 'mixins' as *;
+
+body {
+  min-height: 100vh; // asegura que cubra toda la pantalla
+  display: flex;
+  flex-direction: column;
+  background-color: vars.$color-main; // color de fondo principal
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  flex: 1;
+  background-image: linear-gradient(to bottom, #474056, #4b435b, #4f4661, #534866, #574b6c, #5b4f72, #605277, #64567d, #6a5c84, #70618b, #776793, #7d6d9a);
+
+  img { max-width: 100%; height: auto; }
+}
+
+.divmain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+
+  img { border-radius: vars.$border-radius; }
+}
+
+.divplanes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.divcarru {
+  display: grid;
+  width: 100%;
+  padding: 0 20px;
+  justify-items: center;
+  align-items: center;
+
+  // Limita el ancho máximo del carrusel para que no se vea gigante
+  max-width: 1200px; 
+  margin: 0 auto; // centra el carrusel
+
+  #imgcarru1,
+  #imgcarru2,
+  #imgcarru3 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+  }
+}
+
+.grid-dedicados {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  justify-items: center;
+}
+
+.texto-dedicados {
+  p {
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: vars.$color-primario; // usa tu variable si la tienes
+  }
+}
+
+.videodedicados {
+  iframe {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+@use 'variables';
+@use 'mixins';
+@use 'header';
+@use 'mains';
+@use 'footer';
+@use 'componentes';
+@use 'media';
+
+/* Reset global */
+* { margin: 0; padding: 0; box-sizing: border-box; }
